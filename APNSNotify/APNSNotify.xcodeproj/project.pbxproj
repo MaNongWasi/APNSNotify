@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C65DDA12CE22E031FF54548 /* Pods_APNSNotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029AD949E0C4FD545E37ABA2 /* Pods_APNSNotify.framework */; };
+		66BE65BA1EC485200051F3C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BE65B91EC485200051F3C0 /* main.m */; };
+		66BE65BD1EC485200051F3C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BE65BC1EC485200051F3C0 /* AppDelegate.m */; };
+		66BE65C01EC485200051F3C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BE65BF1EC485200051F3C0 /* ViewController.m */; };
+		66BE65C31EC485210051F3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BE65C11EC485210051F3C0 /* Main.storyboard */; };
+		66BE65C51EC485210051F3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BE65C41EC485210051F3C0 /* Assets.xcassets */; };
+		66BE65C81EC485210051F3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66BE65C61EC485210051F3C0 /* LaunchScreen.storyboard */; };
+		66BE65D31EC485250051F3C0 /* APNSNotifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BE65D21EC485250051F3C0 /* APNSNotifyTests.m */; };
+		66BE65DE1EC485260051F3C0 /* APNSNotifyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BE65DD1EC485260051F3C0 /* APNSNotifyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66BE65CF1EC485250051F3C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66BE65AD1EC4851E0051F3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66BE65B41EC4851E0051F3C0;
+			remoteInfo = APNSNotify;
+		};
+		66BE65DA1EC485260051F3C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66BE65AD1EC4851E0051F3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66BE65B41EC4851E0051F3C0;
+			remoteInfo = APNSNotify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029AD949E0C4FD545E37ABA2 /* Pods_APNSNotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSNotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BE65B51EC485200051F3C0 /* APNSNotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNSNotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BE65B91EC485200051F3C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66BE65BB1EC485200051F3C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66BE65BC1EC485200051F3C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66BE65BE1EC485200051F3C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66BE65BF1EC485200051F3C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66BE65C21EC485210051F3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66BE65C41EC485210051F3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66BE65C71EC485210051F3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66BE65C91EC485210051F3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BE65CE1EC485250051F3C0 /* APNSNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BE65D21EC485250051F3C0 /* APNSNotifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APNSNotifyTests.m; sourceTree = "<group>"; };
+		66BE65D41EC485250051F3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BE65D91EC485260051F3C0 /* APNSNotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSNotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BE65DD1EC485260051F3C0 /* APNSNotifyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APNSNotifyUITests.m; sourceTree = "<group>"; };
+		66BE65DF1EC485260051F3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66BE65F01EC4BA840051F3C0 /* APNSNotify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNSNotify.entitlements; sourceTree = "<group>"; };
+		DD3A58D1ED3174D32F0E3E2A /* Pods-APNSNotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSNotify.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSNotify/Pods-APNSNotify.release.xcconfig"; sourceTree = "<group>"; };
+		FF590F67DAA8D68B81C7B946 /* Pods-APNSNotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSNotify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSNotify/Pods-APNSNotify.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66BE65B21EC4851E0051F3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C65DDA12CE22E031FF54548 /* Pods_APNSNotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE65CB1EC485250051F3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE65D61EC485260051F3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34AEF7B264A136F93242AFFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF590F67DAA8D68B81C7B946 /* Pods-APNSNotify.debug.xcconfig */,
+				DD3A58D1ED3174D32F0E3E2A /* Pods-APNSNotify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		370D7A754603EDA53A9433BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029AD949E0C4FD545E37ABA2 /* Pods_APNSNotify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66BE65AC1EC4851E0051F3C0 = {
+			isa = PBXGroup;
+			children = (
+				66BE65B71EC485200051F3C0 /* APNSNotify */,
+				66BE65D11EC485250051F3C0 /* APNSNotifyTests */,
+				66BE65DC1EC485260051F3C0 /* APNSNotifyUITests */,
+				66BE65B61EC485200051F3C0 /* Products */,
+				34AEF7B264A136F93242AFFD /* Pods */,
+				370D7A754603EDA53A9433BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66BE65B61EC485200051F3C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66BE65B51EC485200051F3C0 /* APNSNotify.app */,
+				66BE65CE1EC485250051F3C0 /* APNSNotifyTests.xctest */,
+				66BE65D91EC485260051F3C0 /* APNSNotifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66BE65B71EC485200051F3C0 /* APNSNotify */ = {
+			isa = PBXGroup;
+			children = (
+				66BE65F01EC4BA840051F3C0 /* APNSNotify.entitlements */,
+				66BE65BB1EC485200051F3C0 /* AppDelegate.h */,
+				66BE65BC1EC485200051F3C0 /* AppDelegate.m */,
+				66BE65BE1EC485200051F3C0 /* ViewController.h */,
+				66BE65BF1EC485200051F3C0 /* ViewController.m */,
+				66BE65C11EC485210051F3C0 /* Main.storyboard */,
+				66BE65C41EC485210051F3C0 /* Assets.xcassets */,
+				66BE65C61EC485210051F3C0 /* LaunchScreen.storyboard */,
+				66BE65C91EC485210051F3C0 /* Info.plist */,
+				66BE65B81EC485200051F3C0 /* Supporting Files */,
+			);
+			path = APNSNotify;
+			sourceTree = "<group>";
+		};
+		66BE65B81EC485200051F3C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66BE65B91EC485200051F3C0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66BE65D11EC485250051F3C0 /* APNSNotifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				66BE65D21EC485250051F3C0 /* APNSNotifyTests.m */,
+				66BE65D41EC485250051F3C0 /* Info.plist */,
+			);
+			path = APNSNotifyTests;
+			sourceTree = "<group>";
+		};
+		66BE65DC1EC485260051F3C0 /* APNSNotifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66BE65DD1EC485260051F3C0 /* APNSNotifyUITests.m */,
+				66BE65DF1EC485260051F3C0 /* Info.plist */,
+			);
+			path = APNSNotifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66BE65B41EC4851E0051F3C0 /* APNSNotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BE65E21EC485260051F3C0 /* Build configuration list for PBXNativeTarget "APNSNotify" */;
+			buildPhases = (
+				5708810D8F007B5E02A00FBB /* [CP] Check Pods Manifest.lock */,
+				66BE65B11EC4851E0051F3C0 /* Sources */,
+				66BE65B21EC4851E0051F3C0 /* Frameworks */,
+				66BE65B31EC4851E0051F3C0 /* Resources */,
+				51DCDFD6AB5CE2458BCDD14D /* [CP] Embed Pods Frameworks */,
+				5DBCB4AF9CC2BA069720DF0B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APNSNotify;
+			productName = APNSNotify;
+			productReference = 66BE65B51EC485200051F3C0 /* APNSNotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66BE65CD1EC485250051F3C0 /* APNSNotifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BE65E51EC485260051F3C0 /* Build configuration list for PBXNativeTarget "APNSNotifyTests" */;
+			buildPhases = (
+				66BE65CA1EC485250051F3C0 /* Sources */,
+				66BE65CB1EC485250051F3C0 /* Frameworks */,
+				66BE65CC1EC485250051F3C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66BE65D01EC485250051F3C0 /* PBXTargetDependency */,
+			);
+			name = APNSNotifyTests;
+			productName = APNSNotifyTests;
+			productReference = 66BE65CE1EC485250051F3C0 /* APNSNotifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66BE65D81EC485260051F3C0 /* APNSNotifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66BE65E81EC485260051F3C0 /* Build configuration list for PBXNativeTarget "APNSNotifyUITests" */;
+			buildPhases = (
+				66BE65D51EC485260051F3C0 /* Sources */,
+				66BE65D61EC485260051F3C0 /* Frameworks */,
+				66BE65D71EC485260051F3C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66BE65DB1EC485260051F3C0 /* PBXTargetDependency */,
+			);
+			name = APNSNotifyUITests;
+			productName = APNSNotifyUITests;
+			productReference = 66BE65D91EC485260051F3C0 /* APNSNotifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66BE65AD1EC4851E0051F3C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = vtec;
+				TargetAttributes = {
+					66BE65B41EC4851E0051F3C0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HC54RDV7UN;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					66BE65CD1EC485250051F3C0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HC54RDV7UN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 66BE65B41EC4851E0051F3C0;
+					};
+					66BE65D81EC485260051F3C0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = HC54RDV7UN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 66BE65B41EC4851E0051F3C0;
+					};
+				};
+			};
+			buildConfigurationList = 66BE65B01EC4851E0051F3C0 /* Build configuration list for PBXProject "APNSNotify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66BE65AC1EC4851E0051F3C0;
+			productRefGroup = 66BE65B61EC485200051F3C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66BE65B41EC4851E0051F3C0 /* APNSNotify */,
+				66BE65CD1EC485250051F3C0 /* APNSNotifyTests */,
+				66BE65D81EC485260051F3C0 /* APNSNotifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66BE65B31EC4851E0051F3C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BE65C81EC485210051F3C0 /* LaunchScreen.storyboard in Resources */,
+				66BE65C51EC485210051F3C0 /* Assets.xcassets in Resources */,
+				66BE65C31EC485210051F3C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE65CC1EC485250051F3C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE65D71EC485260051F3C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51DCDFD6AB5CE2458BCDD14D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSNotify/Pods-APNSNotify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5708810D8F007B5E02A00FBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DBCB4AF9CC2BA069720DF0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSNotify/Pods-APNSNotify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66BE65B11EC4851E0051F3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BE65C01EC485200051F3C0 /* ViewController.m in Sources */,
+				66BE65BD1EC485200051F3C0 /* AppDelegate.m in Sources */,
+				66BE65BA1EC485200051F3C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE65CA1EC485250051F3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BE65D31EC485250051F3C0 /* APNSNotifyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE65D51EC485260051F3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BE65DE1EC485260051F3C0 /* APNSNotifyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66BE65D01EC485250051F3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66BE65B41EC4851E0051F3C0 /* APNSNotify */;
+			targetProxy = 66BE65CF1EC485250051F3C0 /* PBXContainerItemProxy */;
+		};
+		66BE65DB1EC485260051F3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66BE65B41EC4851E0051F3C0 /* APNSNotify */;
+			targetProxy = 66BE65DA1EC485260051F3C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66BE65C11EC485210051F3C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BE65C21EC485210051F3C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66BE65C61EC485210051F3C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66BE65C71EC485210051F3C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66BE65E01EC485260051F3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66BE65E11EC485260051F3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66BE65E31EC485260051F3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF590F67DAA8D68B81C7B946 /* Pods-APNSNotify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSNotify/APNSNotify.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.isensit.APNSNotify";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HC54RDV7UN;
+				INFOPLIST_FILE = APNSNotify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isensit.APNSNotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		66BE65E41EC485260051F3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3A58D1ED3174D32F0E3E2A /* Pods-APNSNotify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSNotify/APNSNotify.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.isensit.APNSNotify";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HC54RDV7UN;
+				INFOPLIST_FILE = APNSNotify/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isensit.APNSNotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		66BE65E61EC485260051F3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HC54RDV7UN;
+				INFOPLIST_FILE = APNSNotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isensit.APNSNotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSNotify.app/APNSNotify";
+			};
+			name = Debug;
+		};
+		66BE65E71EC485260051F3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HC54RDV7UN;
+				INFOPLIST_FILE = APNSNotifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isensit.APNSNotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSNotify.app/APNSNotify";
+			};
+			name = Release;
+		};
+		66BE65E91EC485260051F3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HC54RDV7UN;
+				INFOPLIST_FILE = APNSNotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isensit.APNSNotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = APNSNotify;
+			};
+			name = Debug;
+		};
+		66BE65EA1EC485260051F3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = HC54RDV7UN;
+				INFOPLIST_FILE = APNSNotifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isensit.APNSNotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = APNSNotify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66BE65B01EC4851E0051F3C0 /* Build configuration list for PBXProject "APNSNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BE65E01EC485260051F3C0 /* Debug */,
+				66BE65E11EC485260051F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66BE65E21EC485260051F3C0 /* Build configuration list for PBXNativeTarget "APNSNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BE65E31EC485260051F3C0 /* Debug */,
+				66BE65E41EC485260051F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66BE65E51EC485260051F3C0 /* Build configuration list for PBXNativeTarget "APNSNotifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BE65E61EC485260051F3C0 /* Debug */,
+				66BE65E71EC485260051F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66BE65E81EC485260051F3C0 /* Build configuration list for PBXNativeTarget "APNSNotifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66BE65E91EC485260051F3C0 /* Debug */,
+				66BE65EA1EC485260051F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66BE65AD1EC4851E0051F3C0 /* Project object */;
+}

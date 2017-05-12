@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target :'APNSNotify' do
+    pod 'AWSCognito'
+    pod 'AWSCognitoIdentityProvider'
+    pod 'AWSSNS'
+end
