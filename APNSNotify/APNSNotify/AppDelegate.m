@@ -65,8 +65,7 @@
         subscribeRequst.endpoint = respose.endpointArn;
         subscribeRequst.protocols = @"application";
         subscribeRequst.topicArn = @"arn";
-        NSLog(@"result %@", [sns subscribe:subscribeRequst]);
-        return nil;
+        return [sns subscribe:subscribeRequst];
     }] continueWithBlock:^id (AWSTask * t) {
         if (t.cancelled) {
             NSLog(@"Task cancelled");
