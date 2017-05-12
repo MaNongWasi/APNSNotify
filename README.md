@@ -46,4 +46,8 @@ reference Link: http://www.mobileaws.com/2015/03/25/amazon-sns-push-notification
 5. ![cs2](https://cloud.githubusercontent.com/assets/8034605/25904366/56f428a6-359f-11e7-9bea-3237443cbbe6.PNG)
 6. ![sub](https://cloud.githubusercontent.com/assets/8034605/25904376/5c3a52ae-359f-11e7-876d-19a1560e3887.PNG)
 
-
+Usually reason for Error occurred: Error Domain=com.amazonaws.AWSSNSErrorDomain Code=0 "(null)" is because the policy is not add in 
+ 'Unauthenticated role' and 'Authenticated role' in identity pool. Detail can be found in 'IAM' -> role -> relative role created for the app
+ 
+SNS policy:
+http://docs.aws.amazon.com/sns/latest/dg/AccessPolicyLanguage_SpecialInfo.html
