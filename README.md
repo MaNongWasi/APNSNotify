@@ -10,6 +10,9 @@ https://medium.com/aws-activate-startup-blog/a-guide-to-amazon-simple-notificati
 create endpoint
 https://www.adamtootle.com/blog/2014/10/27/ios-push-notifications-registration-using-aws/
 
+create endpoint and subscribe an endpoint to a topic to receive messages published to that topic
+stackoverflow.com/questions/26974852/amazon-aws-how-do-i-subscribe-an-endpoint-to-sns-topic
+
 Providing AWS Credentials
 https://docs.aws.amazon.com/mobile/sdkforios/developerguide/cognito-auth-aws-identity-for-ios.html
 
