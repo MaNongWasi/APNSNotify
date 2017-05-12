@@ -21,12 +21,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    if ([UIDevice currentDevice].systemVersion.doubleValue<8.0) {
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge)];
-    }else {
+   if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * error) {
+            if (!error){
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            }
+        }];
+    }else{
+        UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
         [[UIApplication sharedApplication] registerForRemoteNotifications];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge|UIUserNotificationTypeSound|UIUserNotificationTypeAlert categories:nil]];
         
+        //        [[UIApplication sharedApplication] registerForRemoteNotifications];
+        //        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge|UIUserNotificationTypeSound|UIUserNotificationTypeAlert categories:nil]];
     }
     
     NSString *msg = [NSString stringWithFormat:@"%@", launchOptions];
@@ -105,9 +115,33 @@
     NSLog(@"Failed to register with error : %@", error);
 }
 
+//< ios 8.0
+//only can be notified when app is in background
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
-    NSLog(@"receive %@", userInfo);
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+    NSLog(@"receive %@", userInfo[@"aps"][@"alert"]);
+    
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
+// > ios 8.0
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler{
+    NSLog(@"NO Response User Info: %@", response);
+    NSLog(@"NO Response User Info: %@", response.notification.request.content.userInfo);
+    completionHandler();
+    [self handleRemoteNotification:[UIApplication sharedApplication] userInfo:response.notification.request.content.userInfo];
+}
+
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
+    NSLog(@"User Info: %@", notification.request.content);
+    NSLog(@"User Info: %@", notification.request.content.userInfo);
+    completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+    [self handleRemoteNotification:[UIApplication sharedApplication] userInfo:notification.request.content.userInfo];
+}
+
+- (void) handleRemoteNotification:(UIApplication *)application userInfo:(NSDictionary *)remoteNotif{
+    NSLog(@"Handle Remote Notification Dict: %@", remoteNotif);
+    //hanle click of the push notification from here
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
