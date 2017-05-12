@@ -57,6 +57,15 @@
     [[[sns createPlatformEndpoint:platformEndpointRequest] continueWithSuccessBlock:^id (AWSTask<AWSSNSCreateEndpointResponse *> *t) {
         AWSSNSCreateEndpointResponse *respose = t.result;
         NSLog(@"END POINT %@", respose.endpointArn);
+        AWSSNS *sns = [AWSSNS defaultSNS];
+    [[[sns createPlatformEndpoint:platformEndpointRequest] continueWithSuccessBlock:^id (AWSTask<AWSSNSCreateEndpointResponse *> *t) {
+        AWSSNSCreateEndpointResponse *respose = t.result;
+        NSLog(@"END POINT %@", respose.endpointArn);
+        AWSSNSSubscribeInput *subscribeRequst = [AWSSNSSubscribeInput new];
+        subscribeRequst.endpoint = respose.endpointArn;
+        subscribeRequst.protocols = @"application";
+        subscribeRequst.topicArn = @"arn:aws:sns:eu-central-1:181903153491:APNSNotify";
+        NSLog(@"result %@", [sns subscribe:subscribeRequst]);
         return nil;
     }] continueWithBlock:^id (AWSTask * t) {
         if (t.cancelled) {
@@ -65,7 +74,19 @@
             NSLog(@"Error occurred: %@", t.error);
         }else{
             AWSSNSCreateEndpointResponse *respose = t.result;
-            NSLog(@"END POINT 2 %@", respose.endpointArn);
+
+            NSLog(@"Success");
+        }
+        return nil;
+    }];
+
+        return nil;
+    }] continueWithBlock:^id (AWSTask * t) {
+        if (t.cancelled) {
+            NSLog(@"Task cancelled");
+        }else if(t.error){
+            NSLog(@"Error occurred: %@", t.error);
+        }else{
 
             NSLog(@"Success");
         }
