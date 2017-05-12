@@ -27,3 +27,7 @@ Remember to change the .cer file and the device Token
 AWS configuration
 ![capture](https://cloud.githubusercontent.com/assets/8034605/25996008/458f0b90-3715-11e7-945a-cf75c1657a7f.PNG)
 upload certificate download from https://developer.apple.com/
+
+
+IOS 10 to enable notification
+![1](https://cloud.githubusercontent.com/assets/8034605/25996053/86dd94ae-3715-11e7-9acb-2e12c6f8d2c3.PNG)
