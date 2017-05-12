@@ -27,10 +27,23 @@ https://github.com/stefanhafeneger/PushMeBaby
 
 Remember to change the .cer file and the device Token
 
-AWS configuration
-![capture](https://cloud.githubusercontent.com/assets/8034605/25996008/458f0b90-3715-11e7-945a-cf75c1657a7f.PNG)
-upload certificate download from https://developer.apple.com/
-
 
 IOS 10 to enable notification
 ![1](https://cloud.githubusercontent.com/assets/8034605/25996053/86dd94ae-3715-11e7-9acb-2e12c6f8d2c3.PNG)
+
+TO register AWS SNS with APNS IOS(suitable for testing, in this case, subscription for each device token need to be done one by one):
+Set in aws sns web page
+
+1. ![create](https://cloud.githubusercontent.com/assets/8034605/25904330/37275fac-359f-11e7-9612-ded028a8df06.PNG)
+2. ![cr1](https://cloud.githubusercontent.com/assets/8034605/25904362/51a8b51a-359f-11e7-82de-5467cb163d5e.PNG)
+3. 
+Option 1: ![capture](https://cloud.githubusercontent.com/assets/8034605/25996008/458f0b90-3715-11e7-945a-cf75c1657a7f.PNG)
+upload certificate download from https://developer.apple.com/
+Option 2: Use Code in SNSTestActivity: 'AWSCreateEndpointTask' End Point can be known through result
+reference Link: http://www.mobileaws.com/2015/03/25/amazon-sns-push-notification-tutorial-android-using-gcm/
+3. ![createtopic](https://cloud.githubusercontent.com/assets/8034605/25943334/cfafdd8a-363f-11e7-9d82-603079d1ab88.PNG)
+4. ![topic](https://cloud.githubusercontent.com/assets/8034605/25943315/c7cccba0-363f-11e7-9e8c-fc5693944816.PNG)
+5. ![cs2](https://cloud.githubusercontent.com/assets/8034605/25904366/56f428a6-359f-11e7-9bea-3237443cbbe6.PNG)
+6. ![sub](https://cloud.githubusercontent.com/assets/8034605/25904376/5c3a52ae-359f-11e7-876d-19a1560e3887.PNG)
+
+
