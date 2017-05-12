@@ -64,7 +64,7 @@
         AWSSNSSubscribeInput *subscribeRequst = [AWSSNSSubscribeInput new];
         subscribeRequst.endpoint = respose.endpointArn;
         subscribeRequst.protocols = @"application";
-        subscribeRequst.topicArn = @"arn:aws:sns:eu-central-1:181903153491:APNSNotify";
+        subscribeRequst.topicArn = @"arn";
         NSLog(@"result %@", [sns subscribe:subscribeRequst]);
         return nil;
     }] continueWithBlock:^id (AWSTask * t) {
